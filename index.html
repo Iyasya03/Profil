@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Ahmad Iyasya | Penyihir Syair</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <style>
+   html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  min-height: 100vh;
+  background: 
+    url('https://www.transparenttextures.com/patterns/paper-fibers.png') repeat;
+  background-color: #F5DEB3;
+  background-blend-mode: multiply;
+  color: #3e2f1c;
+}
+
+
+
+    .profile-container {
+      background-color: rgba(255, 248, 220, 0.9); /* warna seperti kertas */
+      width: 360px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      padding: 30px;
+      margin: 40px auto;
+    }
+
+    .profile-container h1 {
+      font-size: 1.8em;
+      color: #3e2f1c;
+      margin-bottom: 5px;
+    }
+
+    .profile-container h3 {
+      font-size: 1.2em;
+      color: #6d4c2c;
+      margin-top: 0;
+      font-style: italic;
+    }
+
+    .profile-container a img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 20px auto 5px;
+      object-fit: cover;
+      border: 3px solid #8b5c2c;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-container a img:hover {
+      transform: scale(1.05);
+    }
+
+    .caption {
+      margin-top: 5px;
+      font-size: 1em;
+    }
+
+    .caption a {
+      text-decoration: none;
+      color: #5c3a21;
+      font-weight: bold;
+    }
+
+    .caption a:hover {
+      color: #8b5c2c;
+    }
+
+    .bio {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.1em;
+      color: #3e2f1c;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 20px auto;
+      background: #f5deb3;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      text-align: justify;
+    }
+
+    .bio.show {
+      display: block;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .socials a {
+      color: #8b5c2c;
+      font-size: 1.5em;
+      text-decoration: none;
+    }
+
+    .socials a:hover {
+      color: #3e2f1c;
+    }
+
+    .bio-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .bio-icons i {
+      font-size: 1.8em;
+      color: #3e2f1c;
+    }
+
+    /* Tombol atau Ikon Buku */
+    .book-container {
+      margin-top: 20px;
+      font-size: 1.1em;
+      color: #3e2f1c;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 20px auto;
+      background: #f5deb3;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      text-align: justify;
+    }
+
+    .book-container a {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 2.5em;
+      color: #8b5c2c;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .book-container a:hover {
+      transform: scale(1.1);
+      color: #3e2f1c;
+    }
+
+    /* Konten Novel */
+    .novel-content {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.1em;
+      color: #3e2f1c;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 20px auto;
+      background: #f5deb3;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      text-align: justify;
+    }
+
+    .novel-content.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-container">
+    <h1>Ahmad Iyasya</h1>
+    <h3>(Penyihir Syair)</h3>
+
+    <a href="javascript:void(0)" onclick="showBio()">
+      <img src="image/profil.jpg" alt="Ahmad Iyasya">
+    </a>
+
+    <div class="caption">
+      <a href="javascript:void(0)" onclick="showBio()">PROFIL</a>
+    </div>
+
+    <div id="bio" class="bio">
+      Saya lahir pada tanggal 18 maret 2003 jadi menurut zodiak, aku seorang Pisces, melankolis, perasa, dan katanya suka tenggelam dalam lamunan. Saya tinggal di desa Kertomulyo, kecamatan Trangkil, kabupaten Pati. Saya sekolah di kota yang sama di Fakultas Sekolah Tinggi Teknik Pati, sekarang sudah memasuki semester 6. Saat ini saya bekerja sebagai karyawan pabrik sebagai QC (Quality Control).
+
+      <br><br>
+
+      Saya juga seorang penulis. Sebutan nama pena saya adalah <strong>Penyihir Syair</strong>, penjelajah rasa, peracik kata, dan penjaga puisi yang lahir dari hati. Kata-kataku bukan sekadar tulisan, tapi mantra yang menusuk jiwa.
+
+      <div class="bio-icons">
+        <a href="http://tiktok.com/@iy_yas" target="_blank" title="TikTok Penyihir Syair">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.instagram.com/iy_yas?igsh=M2M5dnA0cmFudG0w" target="_blank" title="Instagram Ahmad Iyasya">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/Iyasya03" target="_blank" title="GitHub Ahmad Iyasya">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:ahiyasya@gmail.com" target="_blank" title="Email Ahmad Iyasya">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/6287818679286" target="_blank" title="Hubungi lewat WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <!-- Tombol Ikon Buku -->
+      <div class="book-container">
+        <h2>Karya Saya</h2>
+        <p>Silakan baca karya saya di bawah ini:</p>
+        <p><strong>Judul Buku: </strong> <em>Mendung Hujan Aksara Di Bumantara</em></p>
+        <p><strong>Deskripsi: </strong> Mendung Bumantara, gadis PKL berusia 18 tahun dari jurusan Kimia Analis, tak pernah menyangka bahwa dunia kerja bisa seasing dan sedingin itu—sampai ia bertemu Hujan Aksara, pembimbingnya yang tenang tapi penuh rahasia. Di ruang QC yang dingin, perlahan tumbuh kehangatan yang tak seharusnya ada. Antara angka-angka, air, dan analisa kimia, mereka belajar bahwa cinta bisa datang di tempat paling tak terduga. Tapi seberapa jauh mereka bisa melangkah, jika langkah itu dilarang oleh waktu dan keadaan?
+          Sebuah kisah cinta terlarang yang hangat dalam setiap hujan, dan rumit seperti data dalam grafik laboratorium. Klik untuk membaca lebih lanjut.</p>
+        <p><strong>Klik baca novel saya:</strong></p>
+        <!-- Ikon Buku yang Diklik -->
+        <a href="javascript:void(0)" onclick="showNovel()">
+          <i class="fas fa-book"></i> Baca Novel Saya
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Konten Novel yang Akan Muncul Setelah Ikon Buku Diklik -->
+  <div id="novelContent" class="novel-content">
+    <h1 style="text-align: center; font-family: 'Georgia', serif;">MENDUNG HUJAN AKSARA DI BUMANTARA</h1>
+    <div style="border: 5px solid #8b5c2c; border-radius: 10px; padding: 10px; display: inline-block; background-color: #f5deb3;">
+      <img src="image/Buku.png" alt="Cover Buku Mendung Hujan Aksara Di Bumantara" style="width: 100%; max-width: 300px; display: block; margin: 0 auto; border-radius: 8px;">
+      <p style="text-align: center; font-family: 'Times New Roman', serif; font-style: italic;">By: Penyihir Syair</p>
+    <h2>BAB 1 : GADIS PKL ITU BERNAMA MENDUNG BUMANTARA</h2>
+    <p>Perusahaan ini seperti labirin: dingin, penuh tekanan, dan tak ramah bagi siapa pun yang belum terbiasa. Mesin-mesin berdengung tanpa henti, udara dipenuhi aroma bahan kimia yang menusuk hidung, dan dinding-dindingnya seolah menyerap kehangatan, meninggalkan kesan steril yang kaku. Tapi hari itu, di bulan Desember, ada angin baru yang datang. Seorang siswi magang dari SMK Harapan resmi memulai masa praktiknya. Gadis itu melangkah ragu, tapi matanya menyimpan sesuatu yang berbeda. Dia baru pertama kali menginjakkan kaki di dunia kerja, dan ini adalah awal dari perjalanan panjangnya.</p>
+    <p>Namaku Hujan Aksara. Orang-orang di sini memanggilku Aksara. Aku lahir di awal Maret, jadi menurut zodiak, aku seorang Pisces—melankolis, perasa, dan katanya suka tenggelam dalam lamunan. Sekarang aku berusia dua puluh dua tahun dan bekerja sebagai staf QC, Quality Control, di perusahaan ini. Tugasku sederhana tapi vital: memastikan air yang digunakan sebagai bahan baku produksi sudah memenuhi parameter standar kualitas. Air yang tampak jernih sekalipun bisa menyimpan kontaminan berbahaya jika tidak diuji dengan benar.</p>
+    <p>Hari itu, tanggal 11 Desember, aku diminta untuk menjadi pembimbing seorang siswi magang dari jurusan Kimia Analisis. Namanya Mendung Bumantara. Tapi orang-orang memanggilnya Tara. Usianya baru delapan belas tahun, lahir di awal November—Scorpio, zodiak yang dikenal misterius, tenang, dan kadang sulit ditebak. Aku sempat tertawa kecil dalam hati saat membaca biodatanya. Mendung dan Hujan? Apakah ini kebetulan semesta yang aneh atau lelucon takdir yang halus?</p>
+    <p>Saat pertama kali melihat Tara, aku merasa seperti sedang berdiri terlalu dekat dengan sesuatu yang tak bisa dijelaskan. Ada semacam daya tarik yang samar, seperti tarikan medan magnet yang tak terlihat, tapi cukup kuat untuk membuatku memperhatikannya lebih lama dari seharusnya. Dia mengetuk pintu ruang QC dengan sopan, lalu aku mempersilahkannya masuk. Ia mengenakan seragam praktik berwarna putih, dipadukan bawahan abu-abu muda. Rambutnya diikat sederhana. Namun yang paling mencolok adalah matanya—tajam tapi kosong. Seolah menyimpan rahasia yang terlalu tua untuk usia belianya.</p>
+    <p>Dia memperkenalkan diri dengan suara pelan tapi tegas, “Salam kenal. Namaku Mendung Bumantara, dari SMK Harapan, jurusan Kimia Analisis.”</p>
+    <p>Suaranya tidak gemetar, tapi ada sesuatu yang mengalir dari ucapannya—sejuk seperti hujan di awal musim kemarau. Sebuah ketenangan yang langka di tengah kesibukan dunia industri.</p>
+    <p>Aku membalas dengan senyum tipis, “Aku Hujan Aksara. Kamu bisa panggil aku Kak Aksara. Aku yang akan membimbingmu selama PKL di sini.”</p>
+    <p>Tara mengangguk pelan. Tak banyak kata. Aku tidak mengharapkannya banyak bicara. Terkadang, diam bisa lebih mengungkapkan dari seribu percakapan.</p>
+    <p>Kami mulai berkeliling area lab. Aku menunjukkan padanya setiap bagian, dari alat-alat uji laboratorium seperti pH meter, turbidity tester, hingga teknik pengambilan sampel air. Tangannya menggenggam catatan kecil dan pena, siap mencatat setiap informasi penting. Tapi yang menarik, dia tidak menulis dengan kalimat lengkap. Hanya simbol-simbol dan singkatan yang tampaknya hanya bisa dimengerti olehnya sendiri. Mungkin itu caranya menyerap informasi.</p>
+    <p>“Kualitas air sangat penting,” jelasku. “Sebelum dipakai untuk produksi, air harus lolos parameter seperti pH, TDS, TSS, kesadahan, kandungan klorin, hingga logam berat seperti besi atau mangan.”</p>
+    <p>Tara mengangguk, lalu mengangkat tangan kecilnya. “Kalau hasilnya tidak sesuai standar, langsung dibuang, Kak?”</p>
+    <p>Aku sempat terdiam sejenak. Tidak menyangka pertanyaan itu datang dari hari pertama.</p>
+    <p>“Tidak langsung,” jawabku akhirnya. “Kita cari tahu penyebabnya dulu. Bisa karena alat yang error, bisa juga karena sumber air terganggu. QC itu seperti detektif. Kita mencari tahu sumber kesalahan, tapi juga harus jadi bagian dari solusinya.”</p>
+    <p>Dia mengangguk lagi. Tapi kali ini, aku melihat cahaya kecil di matanya. Seperti nyala lilin di dalam lorong yang gelap. Mungkin, dia mulai menikmati dunia ini.</p>
+    <p>Aku mulai memperhatikan hal-hal kecil tentang Tara. Cara ia membenarkan kacamata saat fokus mencatat, bagaimana ia sesekali menghela napas panjang setelah sesi uji air yang rumit, atau cara ia selalu menyempatkan diri merapikan alat sebelum pulang. Semua itu tampak biasa saja, tapi entah mengapa, terasa penting bagiku.</p>
+    <p>Tara memang bukan tipe yang suka bertanya banyak. Tapi justru dari situ, aku jadi semakin penasaran. Apa yang ia pikirkan saat menatap layar spektrofotometer? Apa yang membuatnya tiba-tiba mematung di depan bak penampungan air? Ada ketenangan yang terasa asing darinya. Seolah dia sudah akrab dengan kesendirian.</p>
+    <p>Hari kedua, aku sengaja datang lebih pagi dari biasanya. Entah kenapa, aku ingin memastikan aku sudah ada sebelum Tara tiba. Tapi ternyata, dia sudah duduk di bangku laboratorium, membaca modul uji kualitatif logam berat yang biasanya hanya disentuh mahasiswa semester akhir. Aku berjalan pelan dan berhenti di belakangnya. Ia tak menyadari kehadiranku.</p>
+    <p>“Kamu suka belajar sendiri?” tanyaku.</p>
+    <p>Ia menoleh cepat, agak terkejut, lalu mengangguk. “Kadang-kadang. Kalau suasananya tenang.”</p>
+    <p>Aku duduk di sampingnya. “Kamu tinggal di mana selama PKL?”</p>
+    <p>“Di kosan, dekat sini. Jalan kaki lima menit,” jawabnya singkat.</p>
+    <p>Aku mengangguk pelan. Dan seperti biasa, kami terdiam beberapa detik. Tapi keheningan itu... tidak membuatku ingin pergi. Justru ingin berlama-lama. Membiarkannya tetap hening.</p>
+    <p>Hari ketiga, saat aku menjelaskan cara kalibrasi alat, pandanganku tanpa sadar berlama-lama pada wajahnya. Dia begitu serius mencatat, alisnya sedikit berkerut, dan bibirnya menggumam pelan seolah menghafal. Lalu ia menoleh. Mata kami bertemu. Hanya sepersekian detik, tapi cukup untuk membuat dadaku berdebar. Tara cepat-cepat mengalihkan pandangan, wajahnya memerah samar.</p>
+    <p>Aku pura-pura kembali menoleh ke alat. Tapi dalam hati, aku tahu. Ada yang berubah sejak hari pertama. Dan aku tidak yakin aku harus melawannya.</p>
+    <p>Hari keempat, aku membawakan apel dari rumah. Mungkin kebiasaan lama yang muncul kembali—dulu, ibuku sering menyelipkan apel di tas saat aku mulai bekerja. Tapi saat kuberikan pada Tara, dia menatapnya agak ragu.</p>
+    <p>“Maaf, Kak. Aku belum biasa nerima makanan dari orang yang belum aku kenal dekat,” ucapnya sopan, tapi terdengar jujur.</p>
+    <p>Aku mengangguk, pura-pura tidak kecewa. “Tidak apa-apa. Mungkin nanti kalau sudah lebih kenal.”</p>
+    <p>Ia hanya tersenyum kecil. Tapi senyum itu, entah kenapa, lebih manis dari apel yang kubawa.</p>
+    <p>Sore itu, setelah selesai kegiatan bekerja dan mau pulang, Aku mengembalikan kunci lab di pos satpam, aku melangkah ke parkiran. Dari kejauhan, kulihat Tara berjalan kaki bersama temannya, tertawa kecil sambil bercanda. Saat melewati motorku yang terparkir, dia tiba-tiba berlagak seperti sedang menggeber gasnya—padahal mesinnya belum menyala. Tangannya memutar-mutar grip kanan dengan gaya tengil, seolah-olah motor itu miliknya. Aku hanya tersenyum dari jauh, lalu bergumam dalam hati, “Percayalah, kau akan duduk di atas motor itu dan menikmati seisi kota malam bersamaku.” Dan entah kenapa, aku begitu yakin tentang itu.</p>
+
+    <div class="chapter">
+      <h2>BAB 2 : BERANJAK MENCINTAI BUMANTARA</h2>
+      <p>Hari kelima. Jumat sore, langit mendung menggantung rendah, seolah enggan pergi. Udara lembap. Aroma tanah basah terselip di sela-sela udara yang mulai dingin. Aktivitas di lab selesai lebih cepat hari ini. Seperti biasa, Tara merapikan alat-alat sebelum pulang. Tapi kali ini dia tidak langsung beranjak. Dia berdiri di dekat pintu, menatap layar ponselnya cukup lama. Ekspresi wajahnya berubah samar. Sedikit bingung. Sedikit kecewa.</p>
+      
+      <p>Aku menghampirinya sambil melepas sarung tangan.</p>
+      
+      <p>“Kamu belum pulang?” tanyaku pelan.</p>
+      
+      <p>Tara mengangkat wajah. Ada sedikit keraguan di matanya. “Aku mau pulang ke rumah hari ini, Kak. Tapi… nggak ada yang jemput.”</p>
+      
+      <p>Aku melirik jam tangan. Sudah lewat pukul empat. Perjalanan ke rumahnya memakan waktu hampir satu jam, katanya dulu. Dan langit seperti menyimpan rencana hujan.</p>
+      
+      <p>Aku mengangguk pelan, memahami situasinya. “Mau aku antar?”</p>
+      
+      <p>Dia terlihat ragu sebentar. Lalu mengangguk. “Kalau nggak merepotkan...”</p>
+      
+      <p>“Nggak sama sekali,” jawabku sambil tersenyum.</p>
+      
+      <p>Matanya menyapu sekeliling area lab, lalu menatapku penuh kode. “Tapi… aku jalan duluan, ya.”</p>
+      
+      <p>Aku langsung paham. “Biar nggak ketahuan siapa pun?”</p>
+      
+      <p>Dia mengangguk cepat.</p>
+      
+      <p>“Oke. Aku tunggu di luar gerbang, ya.”</p>
+      
+      <p>Dengan langkah cepat tapi tidak mencurigakan, Tara keluar lebih dulu dari gedung perusahaan. Dia menyelinap lewat sisi parkiran, lalu berjalan kaki melewati gang kecil menuju gerbang depan. Aku menunggu di motor, memantau dari kejauhan.</p>
+      
+      <p>Beberapa menit kemudian, dia muncul dengan ransel masih tergendong. Nafasnya sedikit ngos-ngosan. “Maaf, lama.”</p>
+      
+      <p>“Enggak kok. Ayo, naik.”</p>
+      
+      <p>Kami melaju ke arah kosnya yang hanya berjarak beberapa meter dari kantor. Sesampainya di depan kos, Tara turun cepat.</p>
+      
+      <p>“Aku berkemas dulu, ya. Nggak lama, kok.”</p>
+      
+      <p>“Oke, aku tunggu di sini.”</p>
+      
+      <p>Dia masuk ke kos. Sekitar lima belas menit kemudian, dia kembali dengan ransel di punggung. Rambutnya sedikit berantakan, tapi ada binar antusias di matanya.</p>
+      
+      <p>“Kak, sebelum pulang... boleh kita makan dulu nggak?” tanyanya sambil naik ke motor.</p>
+      
+      <p>“Boleh. Mau makan di mana?”</p>
+      
+      <p>“Ada warung enak di samping Gacoan, di kota. Aku pernah ke sana sekali. Nasi ayam dan omeletnya enak banget.”</p>
+      
+      <p>Aku tersenyum. “Oke, ayo.”</p>
+      
+      <p>Kami menyusuri jalanan kota yang mulai padat, lampu-lampu jalan menyala satu per satu. Tidak lama, kami sampai di area tempat makan ramai anak muda. Di sebelah Gacoan yang penuh antrean, berdiri warung kecil dengan bangku kayu dan lampu temaram kuning. Aroma ayam dan omelet menyeruak.</p>
+      
+      <p>Kami duduk di bangku tengah paling belakang. Tara memesan dua porsi nasi ayam omelet dan dua botol air mineral, karena aku menyuruhnya samain aja.</p>
+      
+      <p>“Ini traktiran aku, ya,” katanya sambil menatapku sekilas.</p>
+      
+      <p>“Baiklah. Tapi besok gantian aku,” balasku.</p>
+      
+      <p>Dia hanya nyengir kecil.</p>
+      
+      <p>Makan malam kami sederhana. Tapi ada sesuatu yang nyaman dari cara kami duduk berdua di tengah keramaian. Tak banyak obrolan. Hanya gumaman soal rasa makanan dan sedikit tawa ringan.</p>
+      
+      <p>Setelah selesai, kami kembali naik motor. Langit sudah benar-benar gelap. Angin malam mulai menusuk, dengan aroma gerimis yang semakin mereda.</p>
+      
+      <p>Di tengah perjalanan, suara Tara terdengar dari belakang. “Kak…”</p>
+      
+      <p>“Hmm?”</p>
+      
+      <p>“Aku ngantuk. Boleh tidur sebentar?”</p>
+      
+      <p>“Di motor?” tanya diriku.</p>
+      
+      <p>“Iya. Aku percaya, Kakak bisa nyetir sambil jagain aku.”</p>
+      
+      <p>Sebelum aku sempat jawab, kepalanya sudah bersandar pelan di pundakku. Nafasku tertahan sesaat. Pelan, kugeser kedua tangan Tara ke depan seakan memelukku dan kugenggam tangan Tara agar dia nggak jatuh.</p>
+      
+      <p>Aku menyetir dengan satu tangan malam itu. Tapi rasanya seperti paling stabil. Aku berkendara melewati kelokan, lampu-lampu toko, dan suara kota yang terus hidup, sementara seorang siswi PKL 18 tahun terlelap di pundakku, percaya padaku.</p>
+      
+      <p>Dan entah sejak kapan, aku mulai merasa, “Mungkin ini bukan cuma perjalanan pulang. Mungkin ini awal dari sesuatu yang lebih dari sekadar antar-jemput.”</p>
+      
+      <p>Di perjalanan pulang, motor melaju pelan di bawah langit malam yang sudah gelap. Aku menatap jalan, lalu melirik ke Tara yang masih terlelap di pundakku. Napasnya tenang, dan dengan tangan kiriku aku memastikan dia tidak jatuh. Tapi ada sesuatu yang membuatku ragu.</p>
+      
+      <p>Apakah aku benar-benar tahu rumahnya?</p>
+      
+      <p>Aku menoleh ke arah Tara yang terlihat nyaman sekali. Tapi rasanya aku belum mendengar dengan jelas alamatnya tadi.</p>
+      
+      <p>Aku pelan-pelan menggoyangkan pundaknya, "Tara, Tara..."</p>
+      
+      <p>Tara mengerjap, matanya terbelalak sejenak sebelum menyadari bahwa dia sudah terlelap. "Hah?" suara beratnya mengandung rasa kantuk yang dalam.</p>
+      
+      <p>"Ada yang kamu lupakan tadi," kataku sambil tersenyum. "Kamu belum kasih tahu alamat rumahmu."</p>
+      
+      <p>Tara memejamkan mata, menguap pelan. "Oh iya," jawabnya seraya memegang kepala dan duduk tegak. "Rumah aku deket sini kok. Pinggir jalan besar, nggak masuk gang. Nanti pas ketemu toko jamu herbal, kita sudah sampai, di belakang toko itu rumahku, Kak."</p>
+      
+      <p>Aku mengangguk, merasa sedikit lebih tenang. "Oke, nanti kalau udah ada toko jamu herbal, kita berhenti."</p>
+      
+      <p>Dia mengangguk pelan, matanya mulai terpejam lagi. "Makasih ya, Kak Aksara," katanya pelan.</p>
+      
+      <p>Aku mengangguk, merasa lebih tenang melihatnya begitu nyaman.</p>
+      
+      <p>Setelah beberapa menit, motor kami berhenti di depan rumah Tara.</p>
+      
+      <p>Aku melihat rumahnya yang sederhana, terletak di pinggir jalan besar, tanpa gerbang atau pagar yang membatasi dari jalan. Hanya rumah berwarna putih dengan halaman kecil di depan, cukup untuk parkir mobil.</p>
+      
+      <p>"Aku sudah sampai," kata Tara pelan, masih setengah terjaga. Ia membuka helm dan meletakkannya di samping motor.</p>
+      
+      <p>Aku menatapnya, memberi senyum kecil. "Iya, hati-hati di dalam ya."</p>
+      
+      <p>Tara mengangguk, lalu dengan sedikit ragu, ia berkata, "Makasih banyak, Kak Aksara. Udah antar aku sampai sini."</p>
+      
+      <p>"Senang bisa bantu," jawabku singkat, masih dengan senyum yang tak bisa kuhapus.</p>
+      
+      <p>Tara melangkah ke depan rumah, menuju pintu utama. "Sampai ketemu hari Senin, Kak."</p>
+      
+      <p>Aku mengangguk dan melambaikan tangan. "Sampai hari Senin, Tara."</p>
+      
+      <p>Tara melangkah masuk ke dalam rumahnya, dan aku menatapnya beberapa detik sebelum menyalakan mesin motor dan berbalik arah. Rasanya ada yang berat ketika kami berpisah begitu saja, meskipun tidak ada kata-kata lebih dari itu. Perasaan itu perasaan yang mulai tumbuh tetap ada, meski kami belum saling mengungkapkannya.</p>
+      
+      <p>Malam itu, setelah sampai di rumah, aku duduk di depan laptop, melongok sejenak ke ponsel yang ada di meja. Ada satu pesan masuk. Tara.</p>
+      
+      <p>Tara: "Makasih lagi ya, Kak Aksara. Gak nyangka kamu bakal anterin aku sampai rumah. Udah capek ya?"</p>
+      
+      <p>Aksara: "Gak masalah kok. Senang bisa bantu. Semoga kamu udah nyaman di rumah."</p>
+      
+      <p>Tara: "Iya, sudah. Baru kelar mandi, sih. Hehe. Gimana kamu?"</p>
+      
+      <p>Aksara: "Aku? Udah di rumah juga. Santai, nggak capek. Cuma agak sepi, ya."</p>
+      
+      <p>Tara: "Pasti biasanya rame ya?"</p>
+      
+      <p>Aksara: "Enggak, kadang-kadang sepi juga kok, sambil tertawa."</p>
+      
+      <p>Tara: "Aku juga sering sendirian, kadang suka nggak tau harus ngapain."</p>
+      
+      <p>Aksara: "Kadang bisa bosen juga ya, kalau sendiri. Tapi ya... pasti ada cara buat cari hiburan."</p>
+      
+      <p>Tara: "Iya, bener juga. Hehe. Oiya, Kak, makasih banget tadi. Udah nemenin aku ngobrol."</p>
+      
+      <p>Aksara: "Kembali kasih. Obrolan yang ringan tapi cukup bikin nyaman ya?"</p>
+      
+      <p>Tara: “Enggak juga, dasar gombal,” sambil tertawa kecil.</p>
+      
+      <p>Aksara: “Masak sih?” (lalu Tara mengalihkan pembicaraan).</p>
+      
+      <p>Tara: "Eh, Kak, ngomong-ngomong, parfum kamu tuh... apa ya? Aku ngerasa kayak masih nempel banget di tangan aku sampai rumah tadi, sebelum mandi."</p>
+      
+      <p>Aksara: "Oh, itu parfum aku, ya? Maaf, kalau kebawa sampai rumah. Aku biasa pakai ini, emang agak menyengat. Kenapa? Ciumannya sampai terasa banget, ya?"</p>
+      
+      <p>Tara: "Iya, mungkin karena kamu tadi pegang tangan aku juga kali ya, jadi wanginya nempel. Tapi aneh juga, karena biasanya parfum nggak bisa nempel lama gitu."</p>
+      
+      <p>Aksara: "Kalau gitu, berarti parfum aku cukup punya daya tarik ya."</p>
+      
+      <p>Tara: "Haha, iya, bisa jadi. Tapi ya... enak sih wanginya."</p>
+      
+      <p>Aksara hanya bisa tersenyum, sedikit geli. Kami lanjutkan obrolan ringan seperti biasa, tapi kali ini ada perasaan aneh yang menggelitik. Wanginya dan percakapan yang begitu simpel tiba-tiba terasa lebih personal.</p>
+    
+      <div class="chapter">
+        <div class="chapter-title"><h2>BAB 3 : AKSARA CINTA BUMANTARA</h2></div>
+        <div class="chapter-text">
+            <p class="timestamp">Sabtu, dua belas Desember</p>
+            <p>Hari itu terasa lebih berat dari biasanya. Tara masih teringat jelas malam Jumat lalu, ketika Aksara mengantarnya pulang. Genggaman tangan Aksara yang hangat dan kenyamanan yang menyusup begitu saja tanpa Tara sadari. Tetapi ada perasaan yang lebih dalam yang tidak bisa ia hindari. Ketakutan itu... ketakutan yang datang dari masa lalu, tentang aturan yang ketat di perusahaan, dan kisah kakak kelasnya yang pernah terjerat masalah besar karena hubungan seperti ini.</p>
+            <p>Tara tahu betul apa akibatnya jika hubungan semacam ini terbongkar, meski mereka hanya sekedar dekat. Karena itu, malam itu, setelah menenangkan pikirannya, ia memberanikan diri untuk mengirim pesan kepada Aksara.</p>
+            <p>Tara: Aksara, aku masih kepikiran soal hari Jumat. Aku takut kalau ketahuan, bisa jadi kamu yang kena masalah. Aku tahu ada aturan yang jelas di kantor, dan aku nggak mau kamu tersangkut gara-gara aku.</p>
+            <p>Pesan itu terkirim, dan Tara menunggu balasan dengan cemas. Tak lama kemudian, Aksara membalas.</p>
+            <p>Aksara: Aku paham kok, Tara. Aku tahu peraturannya keras banget, apalagi setelah kejadian kakak kelasmu. Tapi jangan khawatir ya, dan aku nggak mau kamu merasa sendirian. Tapi aku ngerti, kita harus hati-hati, biar nggak jadi pembicaraan orang.</p>
+            <p>Tara menarik napas panjang, merasakan sedikit ketenangan, meskipun ketakutannya belum sepenuhnya hilang.</p>
+            <p>Tara: Iya, aku cuma nggak mau kalau semuanya berantakan karena ini. Aku nggak mau kamu ikut kena masalah, Aksara.</p>
+            <p>Aksara: Aku ngerti, tapi kalau aku cuma pengen jagain kamu pulang dengan aman, salah nggak? Gak ada niat aneh. Aku cuma pengen kita tetap bisa ngobrol tanpa khawatir, tanpa takut dihakimi.</p>
+            <p>Tara menatap pesan itu lebih lama. Ada rasa lega yang mulai mengalir, tapi juga perasaan yang semakin sulit dipahami.</p>
+            <p>Tara: Iya, aku ngerti kok, Aksara. Aku cuma takut banget kalau semuanya berantakan karena ini.</p>
+            <p>Aksara: Tenang aja, kita akan hati-hati. Kalau ada yang nggak beres, kita cari jalan keluarnya, toh kita juga masih sama – sama belum punya pasangan, tidak ada yang bisa menghakimi kita diluar jam kerja, kalau kerja kita baru profesional.</p>
+            <p>Setelah pesan itu, Tara merasa sedikit lebih tenang, meskipun perasaan cemas tetap ada di dalam dada.</p>
+            <p>Dan keesokan harinya, Minggu sore, Senja nyaris lenyap ditelan gerimis yang berubah menjadi hujan deras. Langit tampak sendu, seolah ikut merasakan gelisah yang menggumpal di dada Tara. Jalanan yang ia lewati menuju kos tampak basah dan lengang, hanya suara motor yang melaju pelan dan rintik hujan yang jatuh di jas hujannya menemani perjalanan sore itu.</p>
+            <p>Rambutnya sedikit lembap saat ia melangkah masuk ke dalam kos. Udara dingin menyambut, menggigit pelan kulitnya, sementara aroma tanah basah menyusup lewat jendela yang belum sempat ia tutup. Tangannya gemetar ringan saat membuka jaket. Ia baru saja meletakkan helm ketika ponselnya bergetar lembut di saku celana.</p>
+            <p><strong>(Pesan Masuk dari Aksara)</strong></p>
+            <p>Aksara: Udah nyampe kos, Tara? Hujannya deras banget ya. Jangan lupa ganti baju yang kering, nanti masuk angin, kalau ada minyak telon di pakai ya.</p>
+            <p>Tara tersenyum kecil. Suara hujan masih terus bernyanyi di balik kaca jendela, tapi pesan itu... terasa seperti payung yang melindunginya dari dingin yang sebenarnya tak kasat mata.</p>
+            <p>Tara: Iya, baru nyampe. Basah kuyup tadi. Hujannya deras banget, tapi entah kenapa aku malah senang.</p>
+            <p>Aksara: Senang karena hujan? Atau karena hujan bikin kamu inget jalan-jalan kita Jumat kemarin?</p>
+            <p>Tara menghela napas, menatap jendela yang buram oleh embun. Di luar sana, langit gelap, tapi di dadanya, ada cahaya kecil yang menyala karena satu nama “Aksara”.</p>
+            <p>Tara tertawa pelan membaca balasan Aksara barusan. Senyum itu belum juga pudar dari bibirnya ketika perutnya mulai memberi isyarat lapar. Ia membuka aplikasi dan memesan makanan favoritnya lewat GrabFood, sesuatu yang hangat dan sederhana, mie ayam dan segelas teh manis hangat. Makanan yang tidak hanya mengenyangkan perut, tapi juga menenangkan hati.</p>
+            <p>Sambil menunggu pesanan datang, Tara melirik jam di ponsel. Pukul 19.48. Hujan belum juga reda, malah terdengar semakin deras, seperti menolak berhenti.</p>
+            <p>Dan kemudian, layar ponselnya menyala. Kali ini bukan pesan. Tapi panggilan masuk dari Aksara.</p>
+            <p>Tanpa pikir panjang, Tara mengangkatnya.</p>
+            <p>Tara: “Halo…”</p>
+            <p>Suara itu lembut, seperti bisikan yang baru bangun dari mimpi siang hari. Ada rasa hangat yang langsung menjalar ke telinganya aksara hanya karena satu kata sederhana.</p>
+            <p>Aksara: “Kamu udah makan belum?”</p>
+            <p>Tara: “Belum, baru pesan. Kamu sendiri?”</p>
+            <p>Aksara: “Belum juga. Tapi kayaknya denger suara kamu bikin kenyang duluan.”</p>
+            <p>Tara tergelak kecil, wajahnya merah meski tak ada yang melihat.</p>
+            <p>Tara: “Gombal banget sih…”</p>
+            <p>Aksara: “Biar malam minggu kamu nggak dingin-dingin amat.”</p>
+            <p>Tawa kecil mereka beradu di antara suara hujan. Lalu obrolan mengalir seperti air di selokan saat hujan tenang, kadang deras, kadang riuh oleh tawa, kadang diam saat hati merasa terlalu penuh untuk bicara.</p>
+            <p>Hingga akhirnya, jam menunjukkan pukul 00.12. Tapi suara mereka masih saling mengisi.</p>
+            <p>Tara: “Ngomong-ngomong… ini udah lebih dari empat jam ya kita ngobrol?”</p>
+            <p>Aksara: “Serius? Pantes aku lupa kalau belum makan…”</p>
+            <p>Tara: Tertawa lagi. Makanan yang ia pesan tadi pun kini sudah dingin, tak tersentuh. Tapi hatinya hangat, jauh lebih kenyang dari yang ia kira.</p>
+            <p>Aksara: “Tidur ya habis ini. Aku tahu kamu capek seharian di rumah, terus hujan-hujanan lagi pulangnya.”</p>
+            <p>Tara: “Iya… makasih ya, udah nemenin malamku.”</p>
+            <p>Aksara: “Selalu, Tara. Kalau kamu mau, aku akan jadi malam yang nggak pernah sepi buat kamu.”</p>
+            <p> Panggilan itu berakhir, tapi hati Tara tetap terhubung. Di luar, hujan belum reda. Tapi di dalam dadanya, kehangatan mulai tumbuh subur.</p>
+            <p> Dan malam itu, Tara tertidur dengan senyum yang tak sempat ia sadari dalam hangatnya hujan, dengan pelukan suara “Hujan Aksara”.</p>
+
+            <p><strong>Pagi yang Berbeda</strong></p>
+            <p>Pagi itu, Senin enam belas Desember, mentari bersembunyi di balik awan kelabu, seakan tahu kisah hati Tara belum benar-benar cerah. Meski hujan berhenti kemarin malam, sisa kabut masih menyelimuti kota. Tara membuka mata di dalam kamar kosnya yang sederhana: jendela berkaca buram, seprai putih terlipat rapi, dan sebuah meja kecil di sudut dengan tumpukan modul sekolah dan buku catatan praktik kerjanya.</p>
+            <p>Ia menghela napas pelan, menatap langit yang masih berwarna abu-abu. Hari ini adalah hari Senin, hari pertama setelah akhir pekan penuh obrolan intim dengan Aksara. Ia merasakan denyut semangat sekaligus gugup memenuhi dadanya. Sepanjang pagi, ingatannya bergulir pada suara lembut Aksara yang menenangkannya hingga larut malam.</p>
+            <p>Tara berdiri di depan cermin, memperhatikan raut wajahnya sendiri: mata sedikit sembab, pipi pucat karena kurang tidur, tapi bibirnya membentuk senyum tipis, senyum yang baru ia sadari barusan. Ia menggoyangkan kepala, berusaha mengusir rasa grogi. Setelah mandi cepat, ia mengenakan seragam magang, kemeja putih dan celana panjang abu-abu, sepatu hitam yang sedikit berdecit saat dipakai. Rambutnya diikat rapi, menyingkirkan helaian yang bisa mengganggu saat bekerja.</p>
+
+            <p>Aksara Bersiap</p>
+            <p>Sementara itu, di sisi lain kota, Aksara juga bersiap untuk bekerja. Dua hari ini rutinitas pagi terasa berbeda: setiap kali menyeduh kopi di dapur rumahnya, pikirannya melayang pada janji malam nanti. Jam 19.00 WIB ia akan menjemput Tara di kos, lalu mereka bersama-sama menuju bioskop di pusat kota. Film horor yang ditunggu-tunggu mulai tayang jam 19.45 WIB, jadi ia harus memastikan semuanya tepat waktu—termasuk mengatur kemacetan malam dan memilih rute terpendek.</p>
+
+            <p>Hari yang Sibuk</p>
+            <p>Pagi hari itu, Tara tiba di perusahaan tepat pukul 07.45. Gerbang masuk masih sepi, satpam menyapa dengan anggukan ringan. Hujan semalam membuat jalanan sedikit lebam, tapi mood-nya sudah terjaga oleh susu stroberi dan coklat coki-coki. Ia memasuki laboratorium QC, tempat ia belajar menguji kualitas air (pH, TDS, TSS, kesadahan, klorin, dan logam berat). Hari itu, supervisor menginstruksikan tim untuk memeriksa sampel dari sumur baru yang akan digunakan dalam produksi. Tara sibuk mencatat, menyiapkan reagent, dan membantu kalibrasi alat. Meski tangannya ringan gemetar, ia berhasil memegang pipet dan menyiapkan kolom uji dengan teliti.</p>
+
+            <p>Siang yang Berbeda</p>
+            <p>Siang hari, jam istirahat, ia duduk sendirian. Piring nasi kotak terhidang di depannya, namun pikirannya kadang melayang. Ia membuka kembali chat semalam di ponsel: “Aku di sini buat kamu… kita jalanin ini bareng…” Seketika ia tersenyum sendiri. Teman magangnya menatap heran.</p>
+            <p>Kanza (teman magang): “Tara, kok ketawa sendiri? Ada yang lucu?”</p>
+            <p>Tara (terkejut): “Oh, enggak kok. Lagi mikir bahan laporan.”</p>
+            <p>Padahal hatinya berdegup kencang karena pesan Aksara.</p>
+            <p>Siang melewati berbagai uji sampel hingga pukul 15.30 WIB. Tara dan tim menutup hari kerja dengan merekap data di komputer. Matahari perlahan tenggelam, dan cahaya keemasan menembus jendela lab, menyisakan bayangan panjang di lantai keramik. Tara menutup laptop, mengecek ponsel: pukul 16.00. Ia punya waktu sekitar tiga jam untuk bersiap (mandi, ganti baju, dan menenangkan diri sebelum kencan malam).</p>
+
+            <p>Pukul 16.05, Tara tiba di kos. Kampret hujan kemarin meninggalkan genangan di halaman depan, dan lantai teras sedikit licin. Ia masuk, menutup pintu pelan, lalu menuju kamar. Tara menyalakan lampu meja, menarik napas dalam, dan membuka lemari. Malam ini ia memilih atasan bermotif bunga yang lembut dipadukan warna pastel yang menenangkan dan dengan rok coklat yang jatuh anggun di lutut, serta sepatu heels hitam yang nyaman. Di meja, ia sempat membolak-balik parfum miliknya, memilih aroma bunga yang lembut, sedikit wangi mawar dan vanila. Sebelum memakainya, ia menatap diri di cermin, memoles sedikit lipstik nude, dan merapikan ikat rambut.</p>
+
+            <p>Pukul 18.45 WIB, ia selesai bersiap. Ia meraih ponsel, memeriksa chat:</p>
+            <p>Aksara: “Sampai jam 19.00 WIB di kos ya. Aku jemput pake motor.”</p>
+            <p>Ia mengirim balasan:</p>
+            <p>Tara:“Siap. Aku tunggu di teras.”</p>
+            <p>Hati Tara berdebar. Janji itu terasa kecil, tapi ia tahu malam ini akan jadi momen istimewa. Ia meneguk secangkir air putih hangat untuk menenangkan diri, lalu berulang kali menghela napas.</p>
+
+            <p>Malam itu jam tangan menunjukkan pukul 18.55 WIB ketika suara deru motor terdengar di depan kos. Tara menoleh ke jendela teras, bodinya dominan hitam dengan aksen putih yang kontras di genangan air dan lampu jalan yang remang. Aksara turun tanpa mengenakan helm dengan outfit jaket hitam dengan logo payung di lengan kanannya, jaket kanvas hangat sekaligus melindungi, seperti dirinya. Dipadu celana cargo hitam yang tegas dan sepatu putih bersih, Aksara tampil kasual namun karismatik.</p>
+            <p>Tara: “Makasih sudah tepat waktu.”</p>
+            <p>Aksara (dengan tawa kecil): “Gak mau bikin kamu nunggu. Ayo, naik.”</p>
+            <p>Tara membungkuk setengah sopan sebelum menaiki jok belakang. Aksara memberi salam ringan, menyalakan mesin, dan mereka melaju keluar gerbang kos. Hawa malam yang dingin dan aroma hujan kemarin semalam menyambut, menciptakan suasana romantis meski sederhana.</p>
+            <p>Tara(berbisik): “Jadi, filmnya mulai jam 19.45, ya?”</p>
+            <p>Aksara: “Betul. Kita harus sampai sebelum jam 19.30. Jalanan malam ini lancar.”</p>
+            <p>Mereka menjelajahi rute terpendek, melintasi jalan utama kota, menembus lampu-lampu lalu lintas yang berwarna-warni. Aksara mengemudi pelan, kadang menepikan motor di lampu merah untuk memastikan Tara nyaman.</p>
+
+            <p>Pukul 19.25, motor berhenti di halaman bioskop. Gedung megah dengan papan neon berjudul film horor baru menyala terang. Antrean sudah mengular, tapi karena sudah membeli tiket online, mereka berjalan cepat ke pintu masuk.</p>
+            <p>Aksara: “Tiketnya digital, tinggal tunjuk.”</p>
+            <p>Tara: “Keren juga ya, teknologi sekarang…”</p>
+            <p>Mereka memasuki studio nomor 2, menemukan kursi di barisan tengah, tepat di posisi ideal untuk menikmati film. Lampu meredup, suara trailer menggelegar, dan jantung Tara berdetak lebih cepat.</p>
+            <p>Aksara(berbisik): “Siap?”</p>
+            <p>Tara (menelan ludah): “Siap… tapi deg-degan.”</p>
+            <p>Film dimulai, efek suara dan kegelapan studio menciptakan suasana mencekam. Tara terkadang memejamkan mata, terkadang melirik Aksara. Ketika adegan jump scare tiba, suara keras menggelegar, dan Tara spontan merangkul lengan Aksara, tangan mereka bertaut. Tara meminta maaf karena sudah merangkul tangan Aksara.</p>
+            <p>Aksara : “Tenang saja, nggak apa-apa kok.”</p>
+            <p>Adegan demi adegan berlalu, Tara hanya memejamkan matanya di sepanjang film karena ketakutan, dan tiba saatnya film berakhir. Lampu studio menyalakan kembali, memperlihatkan wajah-wajah penonton yang lega dan berbisik. Tara menarik napas panjang.</p>
+            <p>Tara: “Gila, tadi tuh deg-degan parah…”</p>
+            <p>Aksara : “Deg-degan karena bunyi suara? Sepanjang alur aja terpejam kedua mata kamu, kadang sebelah aja yang terbuka. Pegang terus aja tanganku, jangan lepasin.”</p>
+            <p>Tara: “Biarin, nggak usah lepas aja.” (sambil menggerutu)</p>
+            <p>Tara tersenyum malu, menggenggam ujung jari Aksara. Mereka melangkah keluar menuju lobi bioskop, sambil menantikan hujan yang jatuh usai jam tayang.</p>
+
+            <p>Setelah film selesai pukul 21.15 WIB, langit di luar mulai meneteskan rintik hujan tipis. Asap kendaraan berpadu dengan aroma tanah basah. Aksara menyalakan motor, dan Tara naik lagi di belakang. Kali ini, kedua tangan Tara melingkar di pinggang Aksara, bukan hanya karena takut, tapi juga karena ingin merasakan kehangatan.</p>
+            <p>Mereka melaju pelan menyusuri jalan basah kota. Di kanan-kiri, lampu jalan berpendar kuning, menciptakan refleksi indah di aspal. Hujan rintik semakin deras, tapi keduanya tak mencari tempat berteduh. Malam ini, hujan terasa seperti musik lembut yang mengiringi detak jantung mereka.</p>
+            <p>Tara(berbisik): “Hujannya… indah ya?”</p>
+            <p>Aksara menepi di sebuah halte bus tua dengan atap berkarat. Dengan rambut dan jaket yang mulai basah terkena hujan, mereka berbincang tentang hujan.</p>
+            <p>Aksara(tersenyum): “Hujan itu air yang merindukan bumi, Tara. Jatuh berkali-kali, walau dia bisa menahan diri di awan, tetap saja rindu itu membuatnya turun ke bumi. Seperti… perasaan aku ke kamu.”</p>
+            <p>Tara menatap Aksara, terharu oleh kata-katanya. Suara hujan yang menderu di atas atap halte seakan mengamini tiap kata.</p>
+            <p>Tara(pelan): “Kalau nanti kamu jauh, dan hujan turun... aku akan selalu mengingatmu.”</p>
+            <p>Aksara : “Begitupun sebaliknya, diriku, Tara.”</p>
+            <p>Aksara mengulurkan tangan, dan Tara menggenggamnya erat. Hujan yang turun kini terasa hangat, menyatukan malam dan dua hati yang perlahan berani menamai rasa.</p>
+            <p>Hujan semakin deras, dan mereka memutuskan untuk pulang. Di perjalanan pulang dengan pelukan hujan yang semakin deras, Tara seakan orang yang paling bahagia kala itu.</p>
+            <p>Tara(berbisik): “Makasih ya, Kak… buat malam ini.”</p>
+            <p> Aksara : “Sama-sama, Tara. Semoga kamu nyenyak tidur nanti.”</p>
+            <p>Motor berhenti di depan kos Tara. Rintik hujan menampilkan cahaya temaram dari lampu teras. Aksara mematikan mesin, dan Tara turun perlahan.</p>
+            <p>Tara: “Sampai ketemu besok, ya.”</p>
+            <p>Aksara : “Sampai ketemu, Tara. Jaga diri.”</p>
+            <p>Mereka saling melempar senyum lembut. Tara melangkah ke pintu kos, menoleh sekali terakhir.</p>
+            <p>Tara : “Kak...”</p>
+            <p>Aksara : “Hm?”</p>
+            <p>Tara: “Mau genggam tangan kamu lagi kapan, ya?”</p>
+            <p>Aksara tertawa pelan, menggeleng.</p>
+            <p>Aksara: “Kapan pun kamu mau.”</p>
+            <p>Tara masuk, pintu tertutup pelan. Hujan terus turun, namun di hatinya, cahaya hangat satu malam terpatri, malam di mana dua hati berani merasakan, meski hubungan itu masih menggantung samar di antara peraturan dan keraguan.</p>
+            <h3>BERSAMBUNG........</h3>
+        </div>
+    </div>
+    
+  </div>
+
+
+  <script>
+    function showBio() {
+      const bio = document.getElementById('bio');
+      bio.classList.toggle('show');
+      window.scrollTo({ top: bio.offsetTop, behavior: 'smooth' });
+    }
+
+    function showNovel() {
+      const novelContent = document.getElementById('novelContent');
+      novelContent.classList.toggle('show');
+      window.scrollTo({ top: novelContent.offsetTop, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "penyihir-syair-portfolio",
+  "version": "1.0.0",
+  "description": "Portofolio Ahmad Iyasya sang Penyihir Syair",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "author": "Ahmad Iyasya",
+  "license": "MIT"
+}
